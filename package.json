@@ -1,0 +1,33 @@
+{
+  "name": "mysql-crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "electron-reload": "^1.5.0",
+    "mysql": "^2.18.1",
+    "promise-mysql": "^5.0.2"
+  },
+  "devDependencies": {
+    "electron": "^11.3.0",
+    "electron-builder": "^22.9.1"
+  },
+  "build": {
+    "appID": "com.ipenywis.app",
+    "productName": "Electron  test App",
+    "target": "NSIS",
+    
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false
+    }
+  }
+}
